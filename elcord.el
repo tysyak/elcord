@@ -471,7 +471,7 @@ If no text is available, use the value of `mode-name'."
   "Obtain the details and state to use for Discord's Rich Presence."
   (let ((activity (if elcord-display-buffer-details
                       (list
-                       (cons "details" (format "Moviendole a %s" (buffer-name)))
+                       (cons "details" (format "En el Buffer %s" (buffer-name)))
                        (cons "state" (format "Linea %s (%s de %S)"
                                              (format-mode-line "%l")
                                              (format-mode-line "%l")
