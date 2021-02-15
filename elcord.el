@@ -462,13 +462,13 @@ If no text is available, use the value of `mode-name'."
   "Obtain the details and state to use for Discord's Rich Presence."
   (let ((activity (if elcord-display-buffer-details
                       (list
-                       (cons "details" (format "Editing %s" (buffer-name)))
-                       (cons "state" (format "Line %s (%s of %S)"
+                       (cons "details" (format "Moviendole a %s" (buffer-name)))
+                       (cons "state" (format "Linea %s (%s de %S)"
                                              (format-mode-line "%l")
                                              (format-mode-line "%l")
                                              (+ 1 (count-lines (point-min) (point-max))))))
                     (list
-                     (cons "details" "Editing")
+                     (cons "details" "Editando")
                      (cons "state" (elcord--mode-text))))))
     (when elcord-display-elapsed
       (push (list "timestamps" (cons "start" elcord--startup-time)) activity))
