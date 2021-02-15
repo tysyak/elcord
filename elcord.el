@@ -77,7 +77,11 @@ See <https://discordapp.com/developers/applications/me>."
                                     ("^slime-.*" . "lisp-mode_icon")
                                     ("^sly-.*$" . "lisp-mode_icon")
                                     (php-mode . "php-mode_icon")
-                                    (python-mode . "python-mode_icon"))
+                                    (python-mode . "python-mode_icon")
+                                    (elixir-mode . "elixir-mode_icon")
+                                    (latex-mode . "latex-mode_icon")
+                                    (term-mode . "ansi-term_icon")
+                                    )
   "Mapping alist of major modes to icon names to have elcord use.
 Note, these icon names must be available as 'small_image' in Discord."
   :type '(alist :key-type (choice (symbol :tag "Mode name")
@@ -99,7 +103,12 @@ Note, these icon names must be available as 'small_image' in Discord."
                                     ("mhtml-mode" . "HTML")
                                     (slime-repl-mode . "SLIME-REPL")
                                     (sly-mrepl-mode . "Sly-REPL")
-                                    (php-mode "PHP"))
+                                    (php-mode . "PHP, el inseguro hermano menor de perl")
+                                    (elixir-mode . "Elixir, un Erlang bien hecho")
+                                    (latex-mode . "Latex, Escribir artículos en Emacs nunca ha sido tan divertido")
+                                    (term-mode . "Viviendo en la Terminal")
+                                    (org-mode . "Texto plano con esteroides")
+                                    )
   "Mapping alist of major modes to text labels to have elcord use."
   :type '(alist :key-type (choice (symbol :tag "Mode name")
                                   (regexp :tag "Regex"))
