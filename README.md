@@ -1,7 +1,5 @@
 # elcord
 
-[![MELPA](https://melpa.org/packages/elcord-badge.svg)](https://melpa.org/#/elcord)
-
 ![](images/elcord-preview.png)
 
 ## Discord Rich Presence for Emacs
