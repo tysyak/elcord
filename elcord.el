@@ -451,15 +451,15 @@ If no text is available, use the value of `mode-name'."
         small-text small-image)
     (cond
      (elcord-use-major-mode-as-main-icon
-      (setq large-text text
-            large-image icon
-            small-text elcord--editor-name
-            small-image elcord--editor-icon))
-     (t
       (setq large-text elcord--editor-name
             large-image elcord--editor-icon
             small-text text
-            small-image icon)))
+            small-image icon))
+     (t
+      (setq large-text text
+            large-image icon
+            small-text elcord--editor-name
+            small-image elcord--editor-icon)))
     (cond
      (elcord-show-small-icon
       (list
