@@ -43,7 +43,7 @@ See <https://discordapp.com/developers/applications/me>."
                  (function :tag "Call the function with no args to get the ID."))
   :group 'elcord)
 
-(defcustom elcord-refresh-rate 15
+(defcustom elcord-refresh-rate 2
   "How often to send updates to Discord, in seconds."
   :type 'integer
   :group 'elcord)
