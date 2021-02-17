@@ -67,6 +67,7 @@ See <https://discordapp.com/developers/applications/me>."
                                     (latex-mode . "latex-mode_icon")
                                     (lisp-mode . "lisp-mode_icon")
                                     (magit-mode . "magit-mode_icon")
+                                    (gitignore-mode . "magit-mode_icon")
                                     (markdown-mode . "markdown-mode_icon")
                                     (nix-mode . "nix-mode_icon")
                                     (org-mode . "org-mode_icon")
@@ -81,6 +82,9 @@ See <https://discordapp.com/developers/applications/me>."
                                     (elixir-mode . "elixir-mode_icon")
                                     (latex-mode . "latex-mode_icon")
                                     (term-mode . "ansi-term_icon")
+                                    (sh-mode . "sh-mode_icon")
+                                    (web-mode . "web-mode_icon")
+                                    (+doom-dashboard-mode . "doom_icon")
                                     )
   "Mapping alist of major modes to icon names to have elcord use.
 Note, these icon names must be available as 'small_image' in Discord."
@@ -94,9 +98,9 @@ Note, these icon names must be available as 'small_image' in Discord."
                                     (c++-mode . "C++")
                                     (csharp-mode . "C#")
                                     (cperl-mode . "Perl")
-                                    (enh-ruby-mode . "Ruby")
+                                    (enh-ruby-mode . "Ruby, Un lenguaje divertido")
                                     (fsharp-mode . "F#")
-                                    (java-mode . "Java")
+                                    (java-mode . "Java, mucho texto")
                                     (lisp-mode . "Lisp Comun")
                                     (markdown-mode . "Escribir documentacion para que la gente los ignore")
                                     (magit-mode . "¡Git pero con Magia!")
@@ -108,6 +112,8 @@ Note, these icon names must be available as 'small_image' in Discord."
                                     (latex-mode . "Latex, Escribir artículos en Emacs nunca ha sido tan divertido")
                                     (term-mode . "Viviendo en la Terminal")
                                     (org-mode . "Texto plano con esteroides")
+                                    (sh-mode . "(ba|z|fi)sh, Scripts por doquier")
+                                    (web-mode . "Los tubos")
                                     )
   "Mapping alist of major modes to text labels to have elcord use."
   :type '(alist :key-type (choice (symbol :tag "Mode name")
@@ -179,7 +185,7 @@ When visiting a boring buffer, it will not show in the elcord presence."
 (defvar elcord--editor-icon
   (cond
    ((boundp 'spacemacs-version) "spacemacs_icon")
-   ((boundp 'doom-version) "doom_icon")
+   ((boundp 'doom-version) "doom_emacs")
    (t "emacs_icon"))
   "The icon to use to represent the current editor.")
 
