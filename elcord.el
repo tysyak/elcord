@@ -87,6 +87,7 @@ See <https://discordapp.com/developers/applications/me>."
                                     (swift-mode . "swift-mode_icon")
                                     (web-mode . "web-mode_icon")
                                     (+doom-dashboard-mode . "doom_icon")
+                                    (text-mode . "emacs_icon")
                                     )
   "Mapping alist of major modes to icon names to have elcord use.
 Note, these icon names must be available as 'small_image' in Discord."
@@ -104,8 +105,8 @@ Note, these icon names must be available as 'small_image' in Discord."
                                     (fsharp-mode . "F#")
                                     (java-mode . "Java, mucho texto")
                                     (lisp-mode . "Lisp Comun")
-                                    (markdown-mode . "Escribir documentacion para que la gente los ignore")
-                                    (magit-mode . "¡Git pero con Magia!")
+                                    (markdown-mode . "Escribiendo documentacion para que la gente los ignore")
+                                    (magit-mode . "Git pero con Magia!")
                                     ("mhtml-mode" . "HTML")
                                     (slime-repl-mode . "SLIME-REPL")
                                     (sly-mrepl-mode . "Sly-REPL")
@@ -115,7 +116,9 @@ Note, these icon names must be available as 'small_image' in Discord."
                                     (term-mode . "Viviendo en la Terminal")
                                     (org-mode . "Texto plano con esteroides")
                                     (sh-mode . "(ba|z|fi)sh, Scripts por doquier")
-                                    (web-mode . "Los tubos")
+                                    (web-mode . "Editando el Doom, pero no el juego")
+                                    (text-mode . "Mucho texto...")
+                                    (emacs-lisp-mode . "Configurando Emacs (deberia estar trabajando)")
                                     )
   "Mapping alist of major modes to text labels to have elcord use."
   :type '(alist :key-type (choice (symbol :tag "Mode name")
