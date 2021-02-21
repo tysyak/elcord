@@ -88,6 +88,7 @@ See <https://discordapp.com/developers/applications/me>."
                                     (web-mode . "web-mode_icon")
                                     (+doom-dashboard-mode . "doom_icon")
                                     (text-mode . "emacs_icon")
+                                    (sql-interactive-mode . "sql-interactive-mode_icon")
                                     )
   "Mapping alist of major modes to icon names to have elcord use.
 Note, these icon names must be available as 'small_image' in Discord."
@@ -119,6 +120,7 @@ Note, these icon names must be available as 'small_image' in Discord."
                                     (web-mode . "Editando el Doom, pero no el juego")
                                     (text-mode . "Mucho texto...")
                                     (emacs-lisp-mode . "Configurando Emacs (deberia estar trabajando)")
+                                    (sql-interactive-mode . "DROP DATABASE *;")
                                     )
   "Mapping alist of major modes to text labels to have elcord use."
   :type '(alist :key-type (choice (symbol :tag "Mode name")
