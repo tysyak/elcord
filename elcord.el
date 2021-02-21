@@ -320,7 +320,7 @@ Argument EVNT The available output from the process."
   "Connects to the Discord socket."
   (or elcord--sock
       (ignore-errors
-        (message "elcord: attempting reconnect..")
+        (message "elcord: intentando volver a conectar..")
         (setq elcord--sock (elcord--make-process))
         (condition-case nil
             (elcord--send-packet 0 `(("v" . 1) ("client_id" . ,(elcord--resolve-client-id))))
@@ -341,7 +341,7 @@ Argument EVNT The available output from the process."
     ;;Reconnected.
     ;; Put a pending message unless we already got first handshake
     (unless elcord--update-presence-timer
-      (message "elcord: connecting..."))
+      (message "elcord: conectando..."))
     (elcord--cancel-reconnect)))
 
 (defun elcord--start-reconnect ()
@@ -357,7 +357,7 @@ Argument EVNT The available output from the process."
 
 (defun elcord--handle-disconnect ()
   "Handles reconnecting when socket disconnects."
-  (message "elcord: disconnected")
+  (message "elcord: desconectado")
   ;;Stop updating presence for now
   (elcord--cancel-updates)
   (setq elcord--sock nil)
